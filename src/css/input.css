@@ -19,3 +19,13 @@
 .hover-profile{
     @apply hover:shadow-[5px_5px_10px_rgba(0,0,0,0.3),-5px_-5px_10px_rgba(0,0,0,0.3)] hover:scale-[1.02] transition-all duration-300
 }
+.profile{
+    @apply flex flex-col items-center bg-gray-900 pb-2 cursor-pointer shadow-[2px_2px_5px_rgba(0,0,0,0.3),-2px_-2px_5px_rgba(0,0,0,0.3)] rounded-[5px]
+}
+/* shadow */
+.shadow2{
+    @apply shadow-[2px_2px_5px_rgba(0,0,0,0.3),-2px_-2px_5px_rgba(0,0,0,0.3)]
+}
+.shadow5{
+    @apply shadow-[5px_5px_10px_rgba(0,0,0,0.3),-5px_-5px_10px_rgba(0,0,0,0.3)]
+}
