@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar-list{
+    @apply p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 ;
+}
+.list-text{
+    @apply text-[15px] ml-4 text-black font-[500] font-poppins 
+}
+.logo-list{
+    @apply text-gray-900 group-hover:text-white duration-300
+}
+.tri-list{
+    @apply cursor-pointer p-2 hover:bg-gray-700 hover:text-white rounded-md mt-1 text-black font-[400]
+}
+
+/* student data */
+.hover-profile{
+    @apply hover:shadow-[5px_5px_10px_rgba(0,0,0,0.3),-5px_-5px_10px_rgba(0,0,0,0.3)] hover:scale-[1.02] transition-all duration-300
+}
