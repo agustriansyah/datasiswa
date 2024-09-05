@@ -9,7 +9,7 @@
     @apply text-[15px] ml-4 text-black font-[500] font-poppins 
 }
 .logo-list{
-    @apply text-blue-950 group-hover:text-white duration-300
+    @apply text-gray-900 group-hover:text-white duration-300
 }
 .tri-list{
     @apply cursor-pointer p-2 hover:bg-gray-700 hover:text-white rounded-md mt-1 text-black font-[400]
