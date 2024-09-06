@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="./css/style.css">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,14 +28,14 @@
 </head>
 <body>
     <!-- HEADER START -->
-    <header class="fixed w-full z-10 top-0 left-0 flex items-center h-[10vh] bg-white shadow-[0_2px_2px_rgba(0,0,0,0.3)] px-3">
+    <header class="fixed w-full z-10 top-0 left-0 flex items-center h-[10vh] bg-gray-700 shadow-[0_2px_2px_rgba(0,0,0,0.3)] px-3">
         <div class=" z-10 w-full h-full">
             <div class="h-full flex justify-between items-center">
                 <div class=" flex items-center">
                     <span class=" text-white text-[30px] cursor-pointer md:hidden" onclick="Openbar()">
                         <i class="bi bi-filter-left px-1 bg-gray-900 rounded-md hover:bg-gray-800 "></i>
                       </span>
-                    <h1 class="font-poppins ml-[10px] font-semibold text-[15px] md:text-[20px]">SMK KARTIKA XX-1 WIRABUANA</h1>
+                    <h1 class="font-poppins ml-[10px] font-semibold text-white text-[15px] md:text-[20px]">SMK KARTIKA XX-1 WIRABUANA</h1>
                 </div>
                 <div>
                     <img src="asset/kartika_s-logo1.png" alt="" class="w-12 md:w-[70px]">
@@ -46,12 +46,12 @@
     <!-- HEADER END -->
     
     <!-- SIDEBAR START -->
-    <div class="sidebar fixed top-0 bottom-0 lg:left-0 md:left-0 -left-[300px] p-2 w-[300px] overflow-y-auto text-center bg-white h-screen pt-[10vh] transition-all duration-1000 shadow-[2px_0_5px_rgba(0,0,0,0.3)]">
-        <div class=" ">
-          <div class="p-2.5 mt-1 flex items-center rounded-md ">
+    <div class="sidebar fixed top-0 bottom-0 lg:left-0 md:left-0 -left-[300px] w-[300px] overflow-y-auto text-center bg-white h-screen p-2 pt-[10vh] transition-all duration-1000 shadow-[2px_0_5px_rgba(0,0,0,0.3)]">
+        <div class="py-2 ">
+          <div class="p-2.5 mt-1 flex items-center rounded-md bg-gray-800 ">
             <img src="asset/kartika_s-logo1.png" class="w-[70px]" alt="">
-            <h1 class=" ml-3 text-[30px] text-gray-900 font-[500] font-pacifico">Stemcart</h1>
-            <i class="bi bi-x ml-[20px] cursor-pointer lg:hidden text-black text-2xl" onclick="Openbar()"></i>
+            <h1 class=" ml-3 text-[30px] text-white font-[500] font-pacifico">Stemcart</h1>
+            <i class="bi bi-x ml-[20px] cursor-pointer lg:hidden text-white text-2xl" onclick="Openbar()"></i>
           </div>
           <hr class="my-2 border-2 border-r-gray-400">
     
@@ -78,10 +78,10 @@
     
             <div class="sidebar-list group">
               <i class="bi bi-chat-left-text-fill logo-list"></i>
-              <div class="flex justify-between w-full items-center" onclick="dropDown()">
+              <div class="flex justify-between w-full items-center " onclick="dropDown()" >
                 <span class="list-text">Chatbox</span>
-                <span class="text-sm " >
-                  <i class="bi bi-chevron-down logo-list rotate-180" id="arrow"></i>
+                <span class="text-sm rotate-180" id="arrow">
+                  <i class="bi bi-chevron-down logo-list "></i>
                 </span>
               </div>
             </div>
@@ -109,31 +109,31 @@
             <div class="w-full flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap">
                 <div class="w-full bg-white shadow-[2px_2px_2px_rgba(0,0,0,0.3),-2px_-2px_2px_rgba(0,0,0,0.3)] rounded-2xl my-2 lg:mx-2">
                     <div>
-                        <h1 class="`font-poppins font-semibold text-2xl p-2 text-gray-900">Number Of Student</h1>
+                        <h1 class="`font-poppins font-semibold text-2xl p-2 text-gray-800">Number Of Student</h1>
                     </div>
                     <div class="flex justify-between p-2">
-                        <h1 class="text-8xl font-semibold text-gray-900">333</h1>
-                        <i class="fas fa-user text-9xl text-gray-900"></i>
+                        <h1 class="text-8xl font-semibold text-gray-800">333</h1>
+                        <i class="fas fa-user text-9xl text-gray-800"></i>
                     </div>
                 </div>
 
                 <div class="w-full bg-white shadow-[2px_2px_2px_rgba(0,0,0,0.3),-2px_-2px_2px_rgba(0,0,0,0.3)] rounded-2xl my-2 lg:mx-2">
                     <div>
-                        <h1 class="`font-poppins font-semibold text-2xl text-gray-900 p-2">Number Of Teacher</h1>
+                        <h1 class="`font-poppins font-semibold text-2xl text-gray-800 p-2">Number Of Teacher</h1>
                     </div>
                     <div class="flex justify-between p-2">
-                        <h1 class="text-8xl font-semibold text-gray-900">50</h1>
-                        <i class="fa-solid fa-chalkboard-user text-9xl text-gray-900"></i>
+                        <h1 class="text-8xl font-semibold text-gray-800">50</h1>
+                        <i class="fa-solid fa-chalkboard-user text-9xl text-gray-800"></i>
                     </div>
                 </div>
  
                 <div class="w-full bg-white shadow-[2px_2px_2px_rgba(0,0,0,0.3),-2px_-2px_2px_rgba(0,0,0,0.3)] rounded-2xl my-2 lg:mx-2">
                     <div>
-                        <h1 class="`font-poppins font-semibold text-2xl p-2 text-gray-900">Number Of Class</h1>
+                        <h1 class="`font-poppins font-semibold text-2xl p-2 text-gray-800">Number Of Class</h1>
                     </div>
                     <div class="flex justify-between p-2">
-                        <h1 class="text-8xl font-semibold text-gray-900">21</h1>
-                        <i class="fa-solid fa-school text-9xl text-gray-900"></i>
+                        <h1 class="text-8xl font-semibold text-gray-800">21</h1>
+                        <i class="fa-solid fa-school text-9xl text-gray-800"></i>
                     </div>
                 </div>
             </div>
