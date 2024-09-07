@@ -1038,12 +1038,6 @@ video {
   border-top-right-radius: 5px;
 }
 
-@media (min-width: 1024px) {
-  .img-profile {
-    width: 180px;
-  }
-}
-
 /* shadow */
 
 .shadow2 {
@@ -1130,10 +1124,6 @@ video {
   .lg\:mx-2 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-  }
-
-  .lg\:hidden {
-    display: none;
   }
 
   .lg\:flex-nowrap {
