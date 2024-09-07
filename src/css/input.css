@@ -32,4 +32,10 @@
 .shadow5{
     @apply shadow-[5px_5px_10px_rgba(0,0,0,0.3),-5px_-5px_10px_rgba(0,0,0,0.3)]
 }
-/* text */
+.shadow2-10 {
+    @apply shadow-[2px_2px_10px_rgba(0,0,0,0.3),-2px_-2px_10px_rgba(0,0,0,0.3)]
+}
+/* padding */
+.padding-profile{
+    @apply p-2
+}
