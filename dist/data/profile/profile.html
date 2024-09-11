@@ -32,7 +32,7 @@
         <div class=" z-10 w-full h-full">
             <div class="h-full flex justify-between items-center">
                 <div class=" flex items-center">
-                    <span class=" text-white text-[30px] cursor-pointer md:hidden" onclick="Openbar()">
+                    <span class=" text-white text-[30px] cursor-pointer" onclick="Openbar()">
                         <i class="bi bi-filter-left px-1 bg-gray-900 rounded-md hover:bg-gray-800 "></i>
                       </span>
                     <h1 class="font-poppins ml-[10px] font-semibold text-white text-[15px] md:text-[20px]">SMK KARTIKA XX-1 WIRABUANA</h1>
@@ -46,12 +46,12 @@
     <!-- HEADER END -->
     
     <!-- SIDEBAR START -->
-    <div class="sidebar fixed top-0 bottom-0 lg:left-0 md:left-0 -left-[300px] w-[300px] overflow-y-auto text-center bg-white h-screen p-2 pt-[10vh] transition-all duration-1000 shadow-[2px_0_5px_rgba(0,0,0,0.3)]">
+    <div class="sidebar fixed top-0 bottom-0 -left-[300px] w-[300px] overflow-y-auto text-center bg-white h-screen p-2 pt-[10vh] transition-all duration-1000">
         <div class="py-2 ">
           <div class="p-2.5 mt-1 flex items-center rounded-md bg-gray-800 ">
             <img src="./../../asset/kartika_s-logo1.png" class="w-[70px]" alt="">
             <h1 class=" ml-3 text-[30px] text-white font-[500] font-pacifico">Stemcart</h1>
-            <i class="bi bi-x ml-[20px] cursor-pointer md:hidden text-white text-2xl" onclick="Openbar()"></i>
+            <i class="bi bi-x ml-[20px] cursor-pointer text-white text-2xl" onclick="Openbar()"></i>
           </div>
           <hr class="my-2 border-2 border-r-gray-400">
     
@@ -101,18 +101,86 @@
     <!-- SIDEBAR END -->
 
     <!-- CONTENT START -->
-    <section class="w-full h-full pt-[10vh] md:pl-[300px]">
-        <div class="w-full h-full px-4">
-            <div class="w-full py-4 flex flex-col">
-                <div class="w-full">
-                    <h1 class=" font-poppins font-semibold text-2xl text-gray-900">DATA STUDENT</h1>
-                    <div class="w-full ">
-                      <h1 class=" font-poppins text-gray-400">Data Student > <span class="text-blue-700"> Agus Triansyah Ar</span></h1>
-                    </div>
-                </div>
-            </div>
+     <section class="w-full h-full py-[10vh] section transition-all duration-1000">
+      <div class="w-full h-full px-4">
+        <div class="w-full py-4 ">
+          <h1 class=" font-poppins font-semibold text-2xl text-gray-900">DATA STUDENT</h1>
+          <div class="w-full ">
+              <h1 class=" font-poppins text-gray-400">Profile > <span class="text-blue-700"> Agus Triansyah Ar</span></h1>
+          </div>
+      </div>
+      <div class="w-full">
+        <div>
+          <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="">
+            BACK
+          </a>
         </div>
-    </section>
+        <div class="w-full">
+          <div class="flex flex-col justify-center items-center my-8">
+            <div class="w-full flex justify-center px-8 py-8 bg-gray-700">
+              <img src="./../../asset/harr.jpg" alt="">
+            </div>
+            <div class="">
+              <div class="">
+                <h2 class="text-xl font-poppins font-[500]">12 TKJ 1</h2>
+                <h1 class="text-xl font-poppins font-[500]">Agus Triansyah Ar</h1>
+                <h2 class="text-sm font-poppins font-[400] text-gray-400">TEKNIK KOMPUTER JARINGAN DAN TELEKOMMUNIKASI</h2>
+              </div>
+              <div>
+                <table>
+                  <tr class="text-left">
+                    <td class="text-sm font-poppins font-[400] text-gray-400">NISN</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">:</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">1234567890</td>
+                  </tr>
+                  <tr>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">NIS</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">:</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">1234567890</td>
+                  </tr>
+                  <tr>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">Kelas</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">:</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">12 TKJ 1</td>
+                  </tr>
+                  <tr>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">Jenis Kelamin</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">:</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">Laki-Laki</td>
+                  </tr>
+                  <tr>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">Agama</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">:</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">Islam</td>
+                  </tr>
+                  <tr>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">Alamat</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">:</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">TKJ 1</td>
+                  </tr>
+                  <tr>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">Tempat/Tgl Lahir</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">:</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">Tegal, 12-08-2007</td>
+                  </tr>
+                  <tr>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">No. HP</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">:</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">081234567890</td>
+                  </tr>
+                  <tr>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">Email</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">:</td>
+                    <td class="text-sm font-poppins font-[400] text-gray-400">5IjWz@example.com</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+     </section>
     <!-- CONTENT END -->
 
 

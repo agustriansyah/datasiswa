@@ -6,7 +6,7 @@
     @apply p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 ;
 }
 .list-text{
-    @apply text-[15px] ml-4 text-black font-[500] font-poppins 
+    @apply text-[15px] ml-4 text-black font-[500] font-poppins whitespace-nowrap
 }
 .logo-list{
     @apply text-gray-900 group-hover:text-white duration-300
@@ -39,3 +39,10 @@
 .padding-profile{
     @apply p-2
 }
+
+.hide {
+    @apply opacity-0 h-0 overflow-hidden transition-all duration-700;
+  }
+  .show {
+    @apply opacity-100 h-auto transition-all duration-700;
+  }
