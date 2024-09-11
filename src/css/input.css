@@ -46,3 +46,8 @@
   .show {
     @apply opacity-100 h-auto transition-all duration-700;
   }
+
+  /* padding */
+  .padding2{
+    @apply p-2
+  }
