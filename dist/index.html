@@ -113,7 +113,7 @@
                     <h1 class=" font-poppins text-gray-400">Welcome, Student > <span class="text-blue-700"> Dashboard</span></h1>
                 </div>
             </div>
-            <div class="w-full flex flex-col   md:flex-row md:flex-wrap lg:flex-nowrap">
+            <div class="w-full flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap">
                 <div class="w-full bg-white shadow-[2px_2px_2px_rgba(0,0,0,0.3),-2px_-2px_2px_rgba(0,0,0,0.3)] rounded-2xl my-2 lg:mx-2">
                     <div>
                         <h1 class="`font-poppins font-semibold text-2xl p-2 text-gray-800">Number Of Student</h1>
@@ -144,15 +144,15 @@
                     </div>
                 </div>
             </div>
-            <div class="pt-4">
-              <div class="bg-white rounded-lg shadow-md p-4">
+            <div class="pt-4 flex flex-col md:flex-row">
+              <!-- Table -->
+              <div class="bg-white w-full rounded-lg shadow2 p-4">
                 <div class="flex justify-between items-center pb-4">
                   <h2 class="text-lg font-bold">New Alumni</h2>
                   <button class="text-gray-500 hover:text-gray-700">
                     View All <i class="fas fa-chevron-right"></i>
                   </button>
                 </div>
-                
                 <div class="overflow-x-auto">
                   <table class="min-w-full bg-white">
                     <thead>
@@ -216,6 +216,70 @@
                     </tbody>
                   </table>
                 </div>
+              </div>
+              <!-- End Table -->
+              <div class=" mt-4 md:mt-0 md:ml-4 w-full bg-white rounded-xl shadow2 p-6">
+                <div class="flex justify-between items-center mb-4">
+                      <h2 class="text-xl font-bold">Major</h2>
+                      <div class="flex space-x-2">
+                        <h1 class="text-gray-950">13</h1>
+                        <button class="text-gray-600 hover:text-gray-900"><i class="fas fa-chevron-right"></i></button>
+                      </div>
+                </div>
+                    
+                    <div class="space-y-4">
+                      <!-- Todo Item 1 -->
+                      <div class="flex items-center bg-gray-50 rounded-lg shadow-sm">
+                        <div class="px-2 h-12 bg-gray-700 rounded-l-lg flex items-center"><i class="fa-solid fa-computer text-white"></i></div>
+                        <div class="ml-4 flex-1">
+                          <h3 class="font-semibold">Teknik Kompter Jaringan</h3>
+                        </div>
+                        <button class="text-gray-400 hover:text-gray-700">60</button>
+                      </div>
+                      
+                      <!-- Todo Item 2 -->
+                      <div class="flex items-center bg-gray-50 rounded-lg shadow-sm">
+                        <div class="px-[10px] h-12 bg-gray-700 rounded-l-lg flex items-center text-white"><i class="fa-solid fa-palette"></i></div>
+                        <div class="ml-4 flex-1">
+                          <h3 class="font-semibold">Desain Komunikasi Visual</h3>
+                        </div>
+                        <h1 class="text-gray-400 hover:text-gray-700">40</h1>
+                      </div>
+                
+                      <!-- Todo Item 3 -->
+                      <div class="flex items-center bg-gray-50 rounded-lg shadow-sm">
+                        <div class="px-2 h-12 bg-gray-700 rounded-l-lg flex items-center"><i class="fa-solid fa-code text-white"></i></div>
+                        <div class="ml-4 flex-1">
+                          <h3 class="font-semibold">Rekayasa Perangkat Lunak</h3>
+                        </div>
+                        <h1 class="text-gray-400 hover:text-gray-700">20</h1>
+                      </div>
+                
+                      <!-- Todo Item 4 -->
+                      <div class="flex items-center bg-gray-50 rounded-lg shadow-sm">
+                        <div class="px-2 h-12 bg-gray-700 rounded-l-lg flex items-center"><i class="fa-solid fa-timeline text-white"></i></div>
+                        <div class="ml-4 flex-1">
+                          <h3 class="font-semibold">Teknik Kendaraan Ringan</h3>
+                        </div>
+                        <h1 class="text-gray-400 hover:text-gray-700">70</h1>
+                      </div>
+                      
+                      <div class="flex items-center bg-gray-50 rounded-lg shadow-sm">
+                        <div class="px-[11px] h-12 bg-gray-700 rounded-l-lg flex items-center"><i class="fa-solid fa-bolt text-white"></i></div>
+                        <div class="ml-4 flex-1">
+                          <h3 class="font-semibold">Teknik Listrik</h3>
+                        </div>
+                        <h1 class="text-gray-400 hover:text-gray-700">30</h1>
+                      </div>
+
+                      <div class="flex items-center bg-gray-50 rounded-lg shadow-sm">
+                        <div class="px-[10px] h-12 bg-gray-700 rounded-l-lg flex items-center"><i class="fa-solid fa-gear text-white"></i></div>
+                        <div class="ml-4 flex-1">
+                          <h3 class="font-semibold">Mesin Perkakas</h3>
+                        </div>
+                        <h1 class="text-gray-400 hover:text-gray-700">40</h1>
+                      </div>
+                    </div>
               </div>
             </div>
         </div>
