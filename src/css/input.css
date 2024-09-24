@@ -51,3 +51,7 @@
   .padding2{
     @apply p-2
   }
+/* sosmed */
+  .sosial-media {
+    @apply flex items-center justify-center bg-gray-800 w-[40px] h-[40px] rounded-full text-white
+  }
