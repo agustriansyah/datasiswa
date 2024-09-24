@@ -9,5 +9,5 @@ function dropDown() {
     document.querySelector('.section').classList.toggle('md:pl-[300px]')
     document.querySelector('.sidebar').classList.toggle('shadow-[2px_0_5px_rgba(0,0,0,0.3)]')
   }
-
+ 
   

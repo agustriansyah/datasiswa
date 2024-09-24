@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../css/style.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <!-- FONTS AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- <style>
+        *{
+            border: 1px solid black;
+        }
+    </style> -->
+</head>
+<body class="bg-gray-100">
+    <!-- HEADER START -->
+    <header class="fixed w-full z-10 top-0 left-0 flex items-center h-[10vh] bg-gray-700 shadow-[0_2px_2px_rgba(0,0,0,0.3)] px-3">
+        <div class=" z-10 w-full h-full">
+            <div class="h-full flex justify-between items-center">
+                <div class=" flex items-center">
+                    <span class=" text-white text-[30px] cursor-pointer" onclick="Openbar()">
+                        <i class="bi bi-filter-left px-1 bg-gray-900 rounded-md hover:bg-gray-800 "></i>
+                      </span>
+                    <h1 class="font-poppins ml-[10px] font-semibold text-white text-[15px] md:text-[20px]">SMK KARTIKA XX-1 WIRABUANA</h1>
+                </div>
+                <div>
+                    <img src="./../../asset/kartika_s-logo1.png" alt="" class="w-12 md:w-[70px]">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+    
+    <!-- SIDEBAR START -->
+    <div class="sidebar fixed top-0 bottom-0 -left-[300px] w-[300px] overflow-y-auto text-center bg-white h-screen p-2 pt-[10vh] transition-all duration-[.5s]">
+        <div class="py-2 ">
+          <div class="p-2.5 mt-1 flex items-center rounded-md bg-gray-800 ">
+            <img src="./../../asset/kartika_s-logo1.png" class="w-[70px]" alt="">
+            <h1 class=" ml-3 text-[30px] text-white font-[500] font-pacifico">Stemcart</h1>
+            <i class="bi bi-x ml-[20px] cursor-pointer text-white text-2xl" onclick="Openbar()"></i>
+          </div>
+          <hr class="my-2 border-2 border-r-gray-400">
+    
+          <div>
+            <div class="p-2.5 mt-3 flex items-center rounded-md 
+            px-4 duration-300 cursor-pointer bg-white shadow-[2px_2px_5px_rgba(0,0,0,0.3),-2px_-2px_5px_rgba(0,0,0,0.3)]">
+              <i class="bi bi-search text-sm text-black"></i>
+              <input class="text-[15px] text-black ml-4 w-full bg-transparent focus:outline-none" placeholder="Search" />
+            </div>
+    
+            <a href="../../index.html"  class="sidebar-list group">
+              <i class="bi bi-house-door-fill logo-list"></i>
+              <span class="list-text">Dashboard</span>
+            </a>
+            <a href="./../studentdata.html" class="sidebar-list group">
+                <i class="bi bi-bar-chart-fill logo-list"></i>
+              <span class="list-text">Data Student</span>
+            </a>
+            <hr class="my-4 border-2 border-r-gray-400">
+            <div class="sidebar-list group">
+              <i class="bi bi-envelope-fill logo-list"></i>
+              <span class="list-text">Messages</span>
+            </div>
+    
+            <div class="sidebar-list group">
+              <i class="bi bi-chat-left-text-fill logo-list"></i>
+              <div class="flex justify-between w-full items-center " onclick="dropDown()" >
+                <span class="list-text">Chatbox</span>
+                <span class="text-sm rotate-180" id="arrow">
+                  <i class="bi bi-chevron-down logo-list "></i>
+                </span>
+              </div>
+            </div>
+            <div class=" leading-7 text-left text-sm font-thin mt-2 w-4/5 mx-auto" id="submenu">
+              <h1 class="tri-list">Social</h1>
+              <h1 class="tri-list">Personal</h1>
+              <h1 class="tri-list">Friends</h1>
+            </div>
+            <div class="sidebar-list group">
+              <i class="bi bi-box-arrow-in-right logo-list"></i>
+              <span class="list-text">Logout</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    <!-- SIDEBAR END -->
+
+    <!-- CONTENT START -->
+     <section class="w-full h-full py-[10vh] section transition-all duration-[.5s]">
+      <div class="w-full h-full px-4">
+        <div class="w-full py-4 ">
+          <h1 class=" font-poppins font-semibold text-2xl text-gray-900">DATA STUDENT</h1>
+          <div class="w-full ">
+              <h1 class=" font-poppins text-gray-400">Data Student > <span class="text-blue-700"> Register</span></h1>
+          </div>
+        </div>
+        <div class="max-w-4xl lg:max-w-5xl mx-auto p-6 bg-gray-200 rounded-lg shadow-lg">
+          <form class="">
+              <div class="flex flex-col lg:flex-row lg:flex-wrap justify-between">
+                  <!-- Name -->
+                  <div class="lg:w-[49%] mt-2 ">
+                      <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                      <input type="text" id="name" placeholder="Enter Name" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                  </div>
+                  <!-- Address -->
+                  <div class="lg:w-[49%] mt-2 ">
+                      <label for="address" class="block text-sm font-medium text-gray-700">Address</label>
+                      <input type="text" id="address" placeholder="Enter Address" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                  </div>
+                  <!-- NIS/NISN -->
+                  <div class="flex lg:w-[49%] mt-2">
+                    <div class="w-full">
+                      <label for="nis" class="block text-sm font-medium text-gray-700">NIS</label>
+                      <input type="text" id="nis" placeholder="Enter NIS" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <div class="w-full ">
+                      <label for="nisn" class="block text-sm font-medium text-gray-700">NISN</label>
+                      <input type="text" id="nisn" placeholder="Enter NISN" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                  </div>
+                  <!-- Class -->
+                  <div class="lg:w-[49%] mt-2">
+                      <label for="class" class="block text-sm font-medium text-gray-700">Class</label>
+                      <input type="text" id="class" placeholder="Enter Class" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                  </div>
+                  <!-- Major -->
+                  <div class="lg:w-[49%] mt-2">
+                      <label for="major" class="block text-sm font-medium text-gray-700">Major</label>
+                      <input type="text" id="major" placeholder="Enter Major" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                  </div>
+                  <!-- Place/Date of Birth -->
+                   <div class="flex flex-col lg:w-[49%] mt-2">
+                      <label for="place-of-birth" class="block text-sm font-medium text-gray-700">Place/Date of Birth</label>
+                      <div class="flex">
+                        <div class="w-full">
+                          <input type="text" id="place-of-birth" placeholder="Enter Place of Birth" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div class="w-[30%]">
+                          <input type="date" id="dob" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                      </div>
+                   </div>
+                  <!-- Religion -->
+                  <div class="lg:w-[49%] mt-2">
+                      <label for="religion" class="block text-sm font-medium text-gray-700">Religion</label>
+                      <input type="text" id="religion" placeholder="Enter Religion" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                  </div>
+                  <!-- Phone Number -->
+                  <div class="lg:w-[49%] mt-2">
+                      <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                      <input type="text" id="phone" placeholder="Enter Phone Number" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                  </div>
+                  <!-- Upload Picture -->
+                  <div class="lg:w-[49%] mt-2">
+                      <label class="block text-sm font-medium text-gray-700">Upload Picture</label>
+                      <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-dashed border-gray-300 rounded-md">
+                          <div class="space-y-1 text-center">
+                              <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
+                                  <path d="M28 8H20V16H8L24 32L40 16H28V8Z" fill="currentColor"></path>
+                              </svg>
+                              <div class="flex text-sm text-gray-600">
+                                  <label for="file-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+                                      <span>Upload a file</span>
+                                      <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                                  </label>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Gender -->
+                  <div class="col-span-2 mt-2 lg:w-[49%]">
+                      <label class="block text-sm font-medium text-gray-700">Gender</label>
+                      <div class="mt-2 space-x-4">
+                          <label class="inline-flex items-center">
+                              <input type="radio" name="gender" value="male" class="text-indigo-600 focus:ring-indigo-500">
+                              <span class="ml-2">Male</span>
+                          </label>
+                          <label class="inline-flex items-center">
+                              <input type="radio" name="gender" value="female" class="text-indigo-600 focus:ring-indigo-500">
+                              <span class="ml-2">Female</span>
+                          </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="flex justify-end mt-4">
+                  <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mr-2">Submit</button>
+                  <button type="reset" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Reset</button>
+              </div>
+          </form>
+      </div>
+      </div>
+     </section>
+    <!-- CONTENT END -->
+
+
+
+
+    <script src="./../../javascript/script.js"></script>
+</body>
+</html>
